@@ -12,6 +12,10 @@ Wygenerowane wyniki mogą się różnić od podanych w tym sprawozdaniu.
 
 ## Zadanie 1
 
+Macierz histogramów dla wszystkich obiektów.
+![did not generate!!!][rawHistogramMatrix]
+
+
 ## Zadanie 2
 
 ## Zadanie 3
@@ -20,3 +24,16 @@ Wygenerowane wyniki mogą się różnić od podanych w tym sprawozdaniu.
 
 ## Wnioski
 
+[rawHistogramMatrix]: https://github.com/kubehe/data-analysis-intro/raw/master/output/histMat.png "Macierz histogramów"
+[dataQuantity]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantity.png "Liczba reprezentów"
+[arithmeticAvgsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/arithmeticAvgByClass.png "Średnie arytmetyczne według klas"
+[geometricMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/geometricMeansByClass.png ""
+[harmonicMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/harmonicMeansByClass.png ""
+[mediansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/mediansByClass.png ""
+[minMaxByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/minMaxByClass.png ""
+[standardDeviationsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/standardDeviationsByClass.png ""
+[variancesByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/variancesByClass.png ""
+[correlationAttsTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/correlationAttsTable.png ""
+[matOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/matOfDependenceGraph.png ""
+[focusedMatOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/focusedMatOfDependenceGraph.png ""
+<!-- []: https://github.com/kubehe/data-analysis-intro/raw/master/output/.png "" -->
