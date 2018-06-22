@@ -24,12 +24,12 @@ Macierz histogramów dla wszystkich obiektów.
 
 ## Wnioski
 
-[rawHistogramMatrix]: https://github.com/kubehe/data-analysis-intro/raw/master/output/histMat.png "Macierz histogramów"
+[rawHistogramMatrix]: output/histMat.png "Macierz histogramów"
 [dataQuantity]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantity.png "Liczba reprezentów"
 [arithmeticAvgsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/arithmeticAvgByClass.png "Średnie arytmetyczne według klas"
-[geometricMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/geometricMeansByClass.png ""
-[harmonicMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/harmonicMeansByClass.png ""
-[mediansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/mediansByClass.png ""
+[geometricMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/geometricMeansByClass.png "Średnie geometryczne według klas"
+[harmonicMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/harmonicMeansByClass.png "Średnie harmoniczne według klas"
+[mediansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/mediansByClass.png "Mediany według klas"
 [minMaxByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/minMaxByClass.png ""
 [standardDeviationsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/standardDeviationsByClass.png ""
 [variancesByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/variancesByClass.png ""
