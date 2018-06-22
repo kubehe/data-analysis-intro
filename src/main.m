@@ -1,1 +1,1 @@
-printf('dupa')
+disp('dupa');
