@@ -24,7 +24,7 @@ Macierz histogramów dla wszystkich obiektów.
 
 ## Wnioski
 
-[rawHistogramMatrix]: https://github.com/kubehe/data-analysis-intro/raw/master/output/histMat.png?raw=true "Macierz histogramów"
+[rawHistogramMatrix]: https://github.com/kubehe/data-analysis-intro/raw/master/output/histMat.png "Macierz histogramów"
 [dataQuantity]: output/dataQuantity.png "Liczba reprezentów"
 [arithmeticAvgsByClass]: output/arithmeticAvgByClass.png "Średnie arytmetyczne według klas"
 [geometricMeansByClass]: output/geometricMeansByClass.png "Średnie geometryczne według klas"
