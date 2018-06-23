@@ -1,7 +1,7 @@
 close all
 clear
 
-load data/dataSet.mat
+load ../../data/dataSet.mat
 
 % zamiana na tablice
 data_array = table2array(t);
@@ -18,7 +18,10 @@ l3 = linkage(no_cls_array,'average');
 % najwyraüniejszy podzia≥ dla single linkage
 figure; dendrogram(l1, 'colorthreshold', 'default');
 title("Dendrogram dla single");
+saveas(gcf, '../../output/dendrogram-single.png');
 figure; dendrogram(l2, 'colorthreshold', 'default');
 title("Dendrogram dla complete");
+saveas(gcf, '../../output/dendrogram-complete.png');
 figure; dendrogram(l3, 'colorthreshold', 'default');
 title("Dendrogram dla average");
+saveas(gcf, '../../output/dendrogram-average.png');
