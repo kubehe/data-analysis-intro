@@ -91,5 +91,5 @@ Tabela krzyżowa grupowania hierarchicznego (complete linkage)
 [completeLinkDendrogram]: ./output/dgram-complete.svg "Dendrogram grupowania hierarchicznego (complete linkage)"
 [kmeansCrossTable]: ./output/crosstab_kmeans.svg "Tabela krzyżowa grupowania metodą k-średnich"
 [singleLinkCrossTable]: ./output/crosstab_single_link.svg "Tabela krzyżowa grupowania hierarchicznego (single linkage)"
-[averageLinkCrossTable]: ./output/crosstab_average_link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
+[averageLinkCrossTable]: ./output/crosstab_avg_link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
 [completeLinkCrossTable]: ./output/crosstab_complete_link.svg "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
