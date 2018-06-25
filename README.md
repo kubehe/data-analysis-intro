@@ -60,13 +60,16 @@ Tabela krzyżowa grupowania metodą k-średnich
 ![didn't generate!][kmeansCrossTable]
 
 Tabela krzyżowa grupowania hierarchicznego (single linkage)
-![didn't generate!][singleLinkCrossTable]:
+![didn't generate!][singleLinkCrossTable]
 
 Tabela krzyżowa grupowania hierarchicznego (average linkage)
-![didn't generate!][averageLinkCrossTable]:
+![didn't generate!][averageLinkCrossTable]
 
 Tabela krzyżowa grupowania hierarchicznego (complete linkage)
-![didn't generate!][completeLinkCrossTable]:
+![didn't generate!][completeLinkCrossTable]
+
+Tabela wynikami skuteczności klasyfikacji poszczególnych metod
+![didn't generate!][classificationTable]
 
 
 <!-- ![didn't generate!][] -->
@@ -89,7 +92,8 @@ Tabela krzyżowa grupowania hierarchicznego (complete linkage)
 [singleLinkDendrogram]: ./output/dgram-single.svg "Dendrogram grupowania hierarchicznego (single linkage)"
 [avgLinkDendrogram]: ./output/dgram-average.svg "Dendrogram grupowania hierarchicznego (average linkage)"
 [completeLinkDendrogram]: ./output/dgram-complete.svg "Dendrogram grupowania hierarchicznego (complete linkage)"
-[kmeansCrossTable]: ./output/crosstab_kmeans.svg "Tabela krzyżowa grupowania metodą k-średnich"
-[singleLinkCrossTable]: ./output/crosstab_single_link.svg "Tabela krzyżowa grupowania hierarchicznego (single linkage)"
-[averageLinkCrossTable]: ./output/crosstab_avg_link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
-[completeLinkCrossTable]: ./output/crosstab_complete_link.svg "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
+[kmeansCrossTable]: ./output/crosstab-kmeans.svg "Tabela krzyżowa grupowania metodą k-średnich"
+[singleLinkCrossTable]: ./output/crosstab-single-link.svg "Tabela krzyżowa grupowania hierarchicznego (single linkage)"
+[averageLinkCrossTable]: ./output/crosstab-avg-link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
+[completeLinkCrossTable]: ./output/crosstab-complete-link.svg "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
+[classificationTable]: ./output/clsf-results.svg "Tabela wynikami skuteczności klasyfikacji poszczególnych metod"
