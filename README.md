@@ -38,6 +38,24 @@ Macierz zależności
 Szczególna macierz zależności
 ![didn't generate!][focusedMatOfDependenceGraph]
 
+Podział na klasy według atrybutu decyzyjnego
+![didn't generate!][Classes]
+
+Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9
+![didn't generate!][kmeansClustering]
+
+Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9
+![didn't generate!][avgLinkClustering]
+
+Dendrogram grupowania hierarchicznego (single linkage)
+![didn't generate!][singleLinkDendrogram]
+
+Dendrogram grupowania hierarchicznego (complete linkage)
+![didn't generate!][completeLinkDendrogram]
+
+Dendrogram grupowania hierarchicznego (average linkage)
+![didn't generate!][avgLinkDendrogram]
+
 <!-- ![didn't generate!][] -->
 
 [rawHistogramMatrix]: ./output/histMat.png "Macierz histogramów"
@@ -52,3 +70,9 @@ Szczególna macierz zależności
 [correlationAttsTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/correlationAttsTable.png "Macierz korelacji między atrybutami"
 [matOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/matOfDependenceGraph.png "Macierz wykresów zależności"
 [focusedMatOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresóœ zależności"
+[Classes]: ./output/plotmat-classes.svg "Podział na klasy według atrybutu decyzyjnego"
+[kmeansClustering]: ./output/plotmat-group469-kmeans.svg "Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9"
+[avgLinkClustering]: ./output/plotmat-group469-avglink.svg "Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9"
+[singleLinkDendrogram]: ./output/dgram-single.svg "Dendrogram grupowania hierarchicznego (single linkage)"
+[avgLinkDendrogram]: ./output/dgram-average.svg "Dendrogram grupowania hierarchicznego (average linkage)"
+[completeLinkDendrogram]: ./output/dgram-complete.svg "Dendrogram grupowania hierarchicznego (complete linkage)"
