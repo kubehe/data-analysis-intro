@@ -13,6 +13,7 @@ filesToRun = [
     "./measures/medianValues.m";
     "./measures/standardDeviation.m";
     "./measures/variance.m";
+    "./attributesAnalysis/dataRelationship.m";
 ];
 
 for i=1:length(filesToRun)

@@ -13,32 +13,30 @@ klasyCell = cellstr(klasy);
 
 
 
-Kowariancja = cov(data{:,1:10});
+covariance = cov(data{:,1:10});
 
-tabelaKowariancji = array2table(Kowariancja);
-tabelaKowariancji.Properties.VariableNames = datX;
-tabelaKowariancji.Properties.RowNames = datX;
-tabelaKowariancji
+covarianceTable = array2table(covariance);
+covarianceTable.Properties.VariableNames = datX;
+covarianceTable.Properties.RowNames = datX;
 
-Korelacja = corr(data{:,1:10});
+covFig = figure;
+covT = uitable('Data',covarianceTable{:,:},'ColumnName',covarianceTable.Properties.VariableNames,...
+    'RowName',covarianceTable.Properties.RowNames,'Units', 'Normalized', 'Position',[0, 0, 1, 1]);
+saveas(covFig, '../../output/covarianceTable.png');
 
-tabelaKorelacji = array2table(Korelacja);
-tabelaKorelacji.Properties.VariableNames = datX;
-tabelaKorelacji.Properties.RowNames = datX;
-tabelaKorelacji
+correlation = corr(data{:,1:10});
 
+correlationTable = array2table(correlation);
+correlationTable.Properties.VariableNames = datX;
+correlationTable.Properties.RowNames = datX;
 
+corrFig = figure;
+corrT = uitable('Data',correlationTable{:,:},'ColumnName',correlationTable.Properties.VariableNames,...
+    'RowName',correlationTable.Properties.RowNames,'Units', 'Normalized', 'Position',[0, 0, 1, 1]);
+saveas(corrFig, '../../output/correlationTable.png');
 
-
-figure
+mat = figure;
 gplotmatrix(data{:,1:10},[],data.klasa)
 title('Macierz wykresów punktowych')
-
-
-
-% dataNames = data(:,1:end-1).Properties.VariableNames;
-% 
-% figure
-% gplotmatrix(data{:,1:11},[],data.klasa)
-% title('Macierz wykresów punktowych')
+saveas(mat, '../../output/matOfDependenceGraph.png');
 
