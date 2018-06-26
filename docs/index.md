@@ -8,6 +8,8 @@ Projekt wykonany na podstawie analizy danych z pliku `./data/dataSet.mat` (proje
 
 Skrypt uruchamia się odpalając - `./start.sh`, lub w Matlabie - `main.m`
 
+Odpalając w bashu upewnij się że dodałeś do zmiennej PATH scieżkę - `xxx/MATLAB/R2018a/bin`
+
 Wygenerowane wyniki mogą się różnić od podanych w tym sprawozdaniu.
 
 ## Zadanie 1
