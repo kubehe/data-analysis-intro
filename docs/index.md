@@ -116,6 +116,7 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 
 
 
+
 ## Zadanie 4
 
 
