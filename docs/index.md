@@ -14,7 +14,7 @@ Odpalając w bashu upewnij się że dodałeś do zmiennej PATH scieżkę - `xxx/
 
 ### Podstawowe parametry zbioru danych
 
-Zbiór danych składa się z x obiektów podzielonych na 5 klas.
+Zbiór danych składa się z 495 obiektów podzielonych na 5 klas.
 
 Każdy obiekt jest opisany przez 10 atrybutów.
 
