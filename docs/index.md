@@ -126,9 +126,13 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 ![didn't generate!][completeLinkDendrogram]
 
 ![didn't generate!][avgLinkDendrogram]
+
 ![didn't generate!][kmeansCrossTable]
+
 ![didn't generate!][singleLinkCrossTable]
+
 ![didn't generate!][averageLinkCrossTable]
+
 ![didn't generate!][completeLinkCrossTable]
 
 ## Zadanie 4
@@ -138,6 +142,7 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 Dokonano porównania 5 klasyfikatorów dla 500 prób.
 
 **Tabela z wynikami skuteczności klasyfikacji poszczególnych metod**
+
 ![didn't generate!][classificationTable]
 
 Dla naszego zbiory danych najskuteczniejsze okazały się kolejno metody **Bayesa** i **Drzewa decyzyjnego** - prawie niezauważalna róznica w fazie tesotwej.
