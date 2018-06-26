@@ -84,7 +84,7 @@ Odchylenie standardowe służy raczej jako miara niepewności. Zastosowanie jej 
 
 ![didn't generate!][variancesByClass]
 
-Odchylenie standardowe jest pierwiastkiem kwadratowym wariancji, a więc te miary są od siebie zależe co oznacza że nie powinny prowadzić do odmiennych wniosków.
+Odchylenie standardowe jest pierwiastkiem kwadratowym wariancji, a więc te miary są od siebie zależne co oznacza że nie powinny prowadzić do odmiennych wniosków.
 
 ## Zadanie 2
 
@@ -94,7 +94,11 @@ Odchylenie standardowe jest pierwiastkiem kwadratowym wariancji, a więc te miar
 
 ![didn't generate!][correlationTable]
 
-Można zauważyć z tabeli silną korelację między poniższymi danymi: 
+Można zauważyć z tabeli silną korelację między poniższymi danymi:
+
+- **dat1** : **dat10**
+- **dat7** : **dat10**
+- **dat1** : **dat7**
 
 Wszystkie powyższe korelacje są bliskie maksymalnej wartości 1. Pozostałe dane nie są ze sobą skorelowane.
 
@@ -116,23 +120,31 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 
 ### Metody grupowania
 
-**
+**Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9**
 ![didn't generate!][kmeansClustering]
 
+**Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9**
 ![didn't generate!][avgLinkClustering]
 
+**Dendrogram grupowania hierarchicznego (single linkage)**
 ![didn't generate!][singleLinkDendrogram]
 
+**Dendrogram grupowania hierarchicznego (complete linkage)**
 ![didn't generate!][completeLinkDendrogram]
 
+**Dendrogram grupowania hierarchicznego (average linkage)**
 ![didn't generate!][avgLinkDendrogram]
 
+**Tabela krzyżowa grupowania metodą k-średnich**
 ![didn't generate!][kmeansCrossTable]
 
+**Tabela krzyżowa grupowania hierarchicznego (single linkage)**
 ![didn't generate!][singleLinkCrossTable]
 
+**Tabela krzyżowa grupowania hierarchicznego (average linkage)**
 ![didn't generate!][averageLinkCrossTable]
 
+**Tabela krzyżowa grupowania hierarchicznego (complete linkage)**
 ![didn't generate!][completeLinkCrossTable]
 
 ## Zadanie 4
