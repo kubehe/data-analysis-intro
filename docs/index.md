@@ -20,15 +20,15 @@ Każdy obiekt jest opisany przez 10 atrybutów.
 
 Poniżej zamieszczone wykresy przedstawiające ilości obiektów.
 
-Wykres kołowy:
+**Wykres kołowy:**
 
 ![didn't generate][dataQuantity]
 
-Wykres słupkowy:
+**Wykres słupkowy:**
 
 ![didn't generate][dataQuantityBars]
 
-Tabelka:
+**Tabelka:**
 
 ![didn't generate][dataQuantityTable]
 
@@ -126,6 +126,7 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 - Przede wszystkim projekt pozwolił nam lepiej zrozumieć dziedzinę informatyki jaką jest analiza danych. Poprzez praktyczny projekt łatwiej nam było zrozumieć podstawy tego przedmiotu.
 
 [dataQuantity]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantity.png "Liczba reprezentów"
+[dataQuantityBars]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantityBars.png "Liczba reprezentów - wykres słupkowy"
 [dataQuantityTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantityTable.png "Liczba reprezentów - tabela"
 [arithmeticAvgsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/arithmeticAvgsByClass.png "Średnie arytmetyczne według klas"
 [geometricMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/geometricMeansByClass.png "Średnie geometryczne według klas"
