@@ -114,11 +114,35 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 
 ## Zadanie 3
 
+### Metody grupowania
 
+**
+![didn't generate!][kmeansClustering]
 
+![didn't generate!][avgLinkClustering]
+
+![didn't generate!][singleLinkDendrogram]
+
+![didn't generate!][completeLinkDendrogram]
+
+![didn't generate!][avgLinkDendrogram]
+![didn't generate!][kmeansCrossTable]
+![didn't generate!][singleLinkCrossTable]
+![didn't generate!][averageLinkCrossTable]
+![didn't generate!][completeLinkCrossTable]
 
 ## Zadanie 4
 
+### Uczenie nadzorowane
+
+Dokonano porównania 5 klasyfikatorów dla 500 prób.
+
+**Tabela z wynikami skuteczności klasyfikacji poszczególnych metod**
+![didn't generate!][classificationTable]
+
+Dla naszego zbiory danych najskuteczniejsze okazały się kolejno metody **Bayesa** i **Drzewa decyzyjnego** - prawie niezauważalna róznica w fazie tesotwej.
+
+Metoda **Prototypowa** wypadła najgorzej, ale mimo wszystko wynik jest akceptowalny.
 
 ## Wnioski
 
@@ -142,3 +166,15 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 [matOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/matOfDependenceGraph.png "Macierz wykresów zależności"
 [focusedMatOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresóœ zależności"
 <!-- []: https://github.com/kubehe/data-analysis-intro/raw/master/output/.png "" -->
+
+[Classes]: https://github.com/kubehe/data-analysis-intro/raw/master/output/plotmat-classes.png "Podział na klasy według atrybutu decyzyjnego"
+[kmeansClustering]: https://github.com/kubehe/data-analysis-intro/raw/master/output/plotmat-group469-kmeans.png "Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9"
+[avgLinkClustering]: https://github.com/kubehe/data-analysis-intro/raw/master/output/plotmat-group469-avglink.png "Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9"
+[singleLinkDendrogram]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dgram-single.svg "Dendrogram grupowania hierarchicznego (single linkage)"
+[avgLinkDendrogram]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dgram-average.svg "Dendrogram grupowania hierarchicznego (average linkage)"
+[completeLinkDendrogram]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dgram-complete.svg "Dendrogram grupowania hierarchicznego (complete linkage)"
+[kmeansCrossTable]: ./output/crosstab-kmeans.svg "Tabela krzyżowa grupowania metodą k-średnich"
+[singleLinkCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-single-link.svg "Tabela krzyżowa grupowania hierarchicznego (single linkage)"
+[averageLinkCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-avg-link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
+[completeLinkCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-complete-link.svg "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
+[classificationTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/clsf-results.svg "Tabela wynikami skuteczności klasyfikacji poszczególnych metod"
