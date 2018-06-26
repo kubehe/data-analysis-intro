@@ -87,4 +87,4 @@ tab.Data = table2cell(res_tab_perc);
 tab.ColumnName = {'NN1', 'NN3', 'Prototypy', 'Bayes', 'Drzewo'};
 tab.RowName = {'Ucz¹cy', 'Testowy'};
 tab.Position = [0 0 455 60];
-saveas(ui, '../../output/clsf_results', 'png');
+saveas(ui, '../../output/clsf-results', 'png');

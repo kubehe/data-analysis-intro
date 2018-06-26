@@ -71,7 +71,7 @@ ui1.Position = [100 100 407 113];
 tab_km1 = uitable(ui1);
 tab_km1.Data = cross_kmeans;
 tab_km1.Position = [0 0 407 113];
-saveas(ui1, '../../output/crosstab_kmeans', 'png');
+saveas(ui1, '../../output/crosstab-kmeans', 'png');
 
 % crosstable dla single linkage
 ui2 = figure;
@@ -79,7 +79,7 @@ ui2.Position = [100 100 407 113];
 tab_km2 = uitable(ui2);
 tab_km2.Data = cross_link_single;
 tab_km2.Position = [0 0 407 113];
-saveas(ui2, '../../output/crosstab_single_link', 'png');
+saveas(ui2, '../../output/crosstab-single-link', 'png');
 
 % crosstable dla average linkage
 ui3 = figure;
@@ -87,7 +87,7 @@ ui3.Position = [100 100 407 113];
 tab_km3 = uitable(ui3);
 tab_km3.Data = cross_link_av;
 tab_km3.Position = [0 0 407 113];
-saveas(ui3, '../../output/crosstab_avg_link', 'png');
+saveas(ui3, '../../output/crosstab-avg-link', 'png');
 
 % crosstable dla complete linkage
 ui4 = figure;
@@ -95,4 +95,4 @@ ui4.Position = [100 100 407 113];
 tab_km4 = uitable(ui4);
 tab_km4.Data = cross_link_com;
 tab_km4.Position = [0 0 407 113];
-saveas(ui4, '../../output/crosstab_complete_link', 'png');
+saveas(ui4, '../../output/crosstab-complete-link', 'png');

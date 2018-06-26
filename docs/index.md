@@ -1,4 +1,4 @@
-# PRiAD Laboratorium, Projekt 20
+﻿# PRiAD Laboratorium, Projekt 20
 
 _Jakub Bączek, Krzysztof Wilk_
 
@@ -94,13 +94,13 @@ Odchylenie standardowe jest pierwiastkiem kwadratowym wariancji, a więc te miar
 
 ![didn't generate!][correlationTable]
 
-Można zauważyć z tabeli silną korelację między poniższymi danymi:
+Można zauważyć z tabeli wyraźną korelację między poniższymi danymi:
 
 - **dat1** : **dat10**
 - **dat7** : **dat10**
 - **dat1** : **dat7**
 
-Wszystkie powyższe korelacje są bliskie maksymalnej wartości 1. Pozostałe dane nie są ze sobą skorelowane.
+Wartość korelacji dla pozostałych danych jest bliska zeru.
 
 #### Tabela kowariancji atrybutów
 
@@ -119,12 +119,10 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 ## Zadanie 3
 
 ### Metody grupowania
-
-**Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9**
-![didn't generate!][kmeansClustering]
-
-**Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9**
-![didn't generate!][avgLinkClustering]
+**Podział na klasy**
+![didn't generate!][Classes]
+Można zauważyć, że na kilku wykresach powstają naturalne skupiska. Najwyraźniejsze są dla wykresów atrybutów: `4 i 6` (skupisko klas 1 i 4), `4 i 9` (skupisko klas 4, 5 oraz 2), jak również `6 i 9` (skupisko klas 4 i 5).
+Można wyciągnąć wniosek, że atrybutami istotnymi dla grupowania są własnie `4, 6 i 9`. Warto sprawdzić odległości między grupami, powstałymi dzięki klasteryzacji hierarchicznej, za pomocą dendrogramu:
 
 **Dendrogram grupowania hierarchicznego (single linkage)**
 ![didn't generate!][singleLinkDendrogram]
@@ -134,6 +132,18 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 
 **Dendrogram grupowania hierarchicznego (average linkage)**
 ![didn't generate!][avgLinkDendrogram]
+
+Jak widać najlepszy podział na grupy ma miejsce dla `średniego i całkowitego połączenia`. Optymalna liczba grup to 5, czyli dokładnie tyle, na ile klas przedstawia atrybut decyzyjny.
+Poniższe wykresy przedstawiają wyniki grupowania za pomocą metody `grupowania hierarchicznego ze średnim połączeniem` oraz `k-średnich`:
+
+**Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9**
+![didn't generate!][kmeansClustering]
+
+**Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9**
+![didn't generate!][avgLinkClustering]
+
+Ze względu na losowe oznaczenie grup dla metody k-średnich oraz mnogość punktów na wykresach, trudno sprawdzić, która metoda lepiej oddaje pierwotny podział na klasy.
+Można to sprawdzić za pomocą tabeli krzyżowych:
 
 **Tabela krzyżowa grupowania metodą k-średnich**
 ![didn't generate!][kmeansCrossTable]
@@ -147,19 +157,22 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 **Tabela krzyżowa grupowania hierarchicznego (complete linkage)**
 ![didn't generate!][completeLinkCrossTable]
 
+Jak widać, najlepiej spisuje się metoda k-średnich.
+
 ## Zadanie 4
 
 ### Uczenie nadzorowane
 
-Dokonano porównania 5 klasyfikatorów dla 500 prób.
+W tym punkcie dokonaliśmy 500 prób uczenia 5 różnych klasyfikatorów, po losowym podziale zbioru danych na zbiór uczący (80%) i testowy (20%).
+Skuteczność sprawdzamy za pomocą tabel krzyżowych, dzieląc sumę elementów na diagonali przez liczbę elementów zbioru. Następnie wyniki zamieniliśmy na wartość procentową.
+Wyniki przedstawia poniższa tabela:
 
 **Tabela z wynikami skuteczności klasyfikacji poszczególnych metod**
 
 ![didn't generate!][classificationTable]
 
-Dla naszego zbiory danych najskuteczniejsze okazały się kolejno metody **Bayesa** i **Drzewa decyzyjnego** - prawie niezauważalna róznica w fazie tesotwej.
-
-Metoda **Prototypowa** wypadła najgorzej, ale mimo wszystko wynik jest akceptowalny.
+Dla naszego zbiory danych najskuteczniejsze okazały się kolejno **Naiwny klasyfikator Bayesa** oraz **Drzewa decyzyjnego** - niemal stuprocentowa skuteczność w fazie testowej.
+Metoda **Najbliższego prototypu** wypadła najgorzej, ale mimo wszystko wynik jest akceptowalny.
 
 ## Wnioski
 
