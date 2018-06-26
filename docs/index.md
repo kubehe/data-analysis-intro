@@ -121,25 +121,20 @@ Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
 ### Metody grupowania
 **Podział na klasy**
 ![didn't generate!][Classes]
-Można zauważyć, że na kilku wykresach powstają naturalne skupiska. Najwyraźniejsze są dla wykresów atrybutów: `4 i 6` (skupisko klas 1 i 4), `4 i 9` (skupisko klas 4, 5 oraz 2), jak również `6 i 9` (skupisko klas 4 i 5).
+Można zauważyć, że na kilku wykresach powstają naturalne skupiska. Standaryzacja zbioru sprawia, że przedziały wartości są zbliżone do siebie. Najwyraźniejsze skupiska występują dla wykresów atrybutów: `4 i 6` (skupisko klas 1 i 4), `4 i 9` (skupisko klas 4, 5 oraz 2), jak również `6 i 9` (skupisko klas 4 i 5).
 Można wyciągnąć wniosek, że atrybutami istotnymi dla grupowania są własnie `4, 6 i 9`. Warto sprawdzić odległości między grupami, powstałymi dzięki klasteryzacji hierarchicznej, za pomocą dendrogramu:
 
-**Dendrogram grupowania hierarchicznego (single linkage)**
 ![didn't generate!][singleLinkDendrogram]
 
-**Dendrogram grupowania hierarchicznego (complete linkage)**
 ![didn't generate!][completeLinkDendrogram]
 
-**Dendrogram grupowania hierarchicznego (average linkage)**
 ![didn't generate!][avgLinkDendrogram]
 
 Jak widać najlepszy podział na grupy ma miejsce dla `średniego i całkowitego połączenia`. Optymalna liczba grup to 5, czyli dokładnie tyle, na ile klas przedstawia atrybut decyzyjny.
 Poniższe wykresy przedstawiają wyniki grupowania za pomocą metody `grupowania hierarchicznego ze średnim połączeniem` oraz `k-średnich`:
 
-**Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9**
 ![didn't generate!][kmeansClustering]
 
-**Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9**
 ![didn't generate!][avgLinkClustering]
 
 Ze względu na losowe oznaczenie grup dla metody k-średnich oraz mnogość punktów na wykresach, trudno sprawdzić, która metoda lepiej oddaje pierwotny podział na klasy.
@@ -164,6 +159,12 @@ Jak widać, najlepiej spisuje się metoda k-średnich.
 ### Uczenie nadzorowane
 
 W tym punkcie dokonaliśmy 500 prób uczenia 5 różnych klasyfikatorów, po losowym podziale zbioru danych na zbiór uczący (80%) i testowy (20%).
+Klasyfikatory, których działanie sprawdzaliśmy:
+- Najbliższego sąsiada (`NN1`)
+- Najbliższych trzech sąsiadów (`NN3`)
+- Najbliższego prototypu (`Prototyp`)
+- Naiwny klasyfikator Bayesa (`Bayes`)
+- Drzewo decyzyjne (`Drzewo`)
 Skuteczność sprawdzamy za pomocą tabel krzyżowych, dzieląc sumę elementów na diagonali przez liczbę elementów zbioru. Następnie wyniki zamieniliśmy na wartość procentową.
 Wyniki przedstawia poniższa tabela:
 
@@ -171,14 +172,14 @@ Wyniki przedstawia poniższa tabela:
 
 ![didn't generate!][classificationTable]
 
-Dla naszego zbiory danych najskuteczniejsze okazały się kolejno **Naiwny klasyfikator Bayesa** oraz **Drzewa decyzyjnego** - niemal stuprocentowa skuteczność w fazie testowej.
-Metoda **Najbliższego prototypu** wypadła najgorzej, ale mimo wszystko wynik jest akceptowalny.
+Dla naszego zbiory danych najskuteczniejsze okazały się kolejno `Naiwny klasyfikator Bayesa` oraz `Drzewa decyzyjnego` - niemal stuprocentowa skuteczność w fazie testowej.
+Metoda `Najbliższego prototypu` wypadła najgorzej, ale mimo wszystko wynik jest akceptowalny.
 
 ## Wnioski
 
 - Analiza danych jest dosyć czasochłonna mimo że samo rozwiązanie w postaci kodu nie jest duże. W tej dziedzinie nauki dużo pracy zajmuje dobór odpowiednich parametrów.
 - Bardzo ważnym elementem jest odpowiednia reprezentacja danych, same liczby często nie są w stanie odwzorować dobrze zależności.
-- Poświęcenie chwili czasu na zrobienie prostych wykresów z badanych danych pozwala przyśpieszyć pracę, np. przy grupowaniu.
+- Poświęcenie chwili czasu na zrobienie prostych wykresów z badanych danych pozwala przyspieszyć i ułatwić pracę, np. przy grupowaniu.
 - Przede wszystkim projekt pozwolił nam lepiej zrozumieć dziedzinę informatyki jaką jest analiza danych. Poprzez praktyczny projekt łatwiej nam było zrozumieć podstawy tego przedmiotu.
 
 [dataQuantity]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantity.png "Liczba reprezentów"
@@ -194,7 +195,7 @@ Metoda **Najbliższego prototypu** wypadła najgorzej, ale mimo wszystko wynik j
 [correlationTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/correlationTable.png "Macierz korelacji między atrybutami"
 [covarianceTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/covarianceTable.png "Macierz kowariancji między atrybutami"
 [matOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/matOfDependenceGraph.png "Macierz wykresów zależności"
-[focusedMatOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresóœ zależności"
+[focusedMatOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresów zależności"
 <!-- []: https://github.com/kubehe/data-analysis-intro/raw/master/output/.png "" -->
 
 [Classes]: https://github.com/kubehe/data-analysis-intro/raw/master/output/plotmat-classes.png "Podział na klasy według atrybutu decyzyjnego"
@@ -203,7 +204,7 @@ Metoda **Najbliższego prototypu** wypadła najgorzej, ale mimo wszystko wynik j
 [singleLinkDendrogram]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dgram-single.png "Dendrogram grupowania hierarchicznego (single linkage)"
 [avgLinkDendrogram]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dgram-average.png "Dendrogram grupowania hierarchicznego (average linkage)"
 [completeLinkDendrogram]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dgram-complete.png "Dendrogram grupowania hierarchicznego (complete linkage)"
-[kmeansCrossTable]: ./output/crosstab-kmeans.png "Tabela krzyżowa grupowania metodą k-średnich"
+[kmeansCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-kmeans.png "Tabela krzyżowa grupowania metodą k-średnich"
 [singleLinkCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-single-link.png "Tabela krzyżowa grupowania hierarchicznego (single linkage)"
 [averageLinkCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-avg-link.png "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
 [completeLinkCrossTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/crosstab-complete-link.png "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
