@@ -20,12 +20,17 @@ covarianceTable.Properties.VariableNames = datX;
 covarianceTable.Properties.RowNames = datX;
 
 covFig = figure;
-covFig.Position = [100,100,830,230];
-covT = uitable(covFig, 'Data',covarianceTable{:,:},'ColumnName',covarianceTable.Properties.VariableNames,...
-    'RowName',covarianceTable.Properties.RowNames);
-covT.Position = [0,0,830,230];
+covFig.Position = [0,0,14,5];
+covT = uitable('Data',covarianceTable{:,:},'ColumnName',covarianceTable.Properties.VariableNames,...
+    'RowName',covarianceTable.Properties.RowNames,'Units', 'Inches', 'Position',[0, 0, 14, 5]);
 saveas(covFig, '../../output/covarianceTable.png');
 
+tableFigure = figure;
+tableFigure.Position = [80 80 550 50];
+tab = uitable(tableFigure);
+tab.ColumnName = labels;
+tab.RowName = {'Ilość'};
+tab.Position = [0 0 550 50];
 
 correlation = corr(data{:,1:10});
 
@@ -34,10 +39,8 @@ correlationTable.Properties.VariableNames = datX;
 correlationTable.Properties.RowNames = datX;
 
 corrFig = figure;
-corrFig.Position = [100,100,830,230];
-corrT = uitable(corrFig, 'Data',correlationTable{:,:},'ColumnName',correlationTable.Properties.VariableNames,...
-    'RowName',correlationTable.Properties.RowNames);
-corrT.Position = [0,0,830,230];
+corrT = uitable('Data',correlationTable{:,:},'ColumnName',correlationTable.Properties.VariableNames,...
+    'RowName',correlationTable.Properties.RowNames,'Units', 'Inches', 'Position',[0, 0, 1, 1]);
 saveas(corrFig, '../../output/correlationTable.png');
 
 mat = figure;

@@ -14,10 +14,13 @@ filesToRun = [
     "./measures/standardDeviation.m";
     "./measures/variance.m";
     "./attributesAnalysis/dataRelationship.m";
+    "./grouping/group.m";
+    "./classifying/classifying.m";
 ];
 
+web('https://kubehe.github.io/data-analysis-intro/', '-browser')
+
 for i=1:length(filesToRun)
-    disp(filesToRun(i));
     try
         run(filesToRun(i));
     catch e

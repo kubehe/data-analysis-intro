@@ -108,14 +108,6 @@ Wartość korelacji dla pozostałych danych jest bliska zeru.
 
 Ciężko zinterpretować macierz kowariancji, ponieważ wartości nie należą do przedziału `<-1, 1>`
 
-### Analiza przydatności atrybutów
-
-#### Macierz wykresów zależnosći
-
-![didn't generate!][matOfDependenceGraph]
-
-Możemy zauważyć z powyższych danych tworzenie się grup dla klas.
-
 ## Zadanie 3
 
 ### Metody grupowania
