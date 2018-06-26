@@ -2,11 +2,14 @@
 
 [Link to report](https://kubehe.github.io/data-analysis-intro/ "Report")
 
-Histogram 
-![didn't generate!][rawHistogramMatrix]
-
 Ilość danych
 ![didn't generate!][dataQuantity]
+
+Ilość danych - wykres słupkowy
+![didn't generate!][dataQuantityBars]
+
+Ilość danych - tabela
+![didn't generate!][dataQuantityTable]
 
 Średnia arytmetyczna
 ![didn't generate!][arithmeticAvgsByClass]
@@ -21,7 +24,7 @@ Mediana
 ![didn't generate!][mediansByClass]
 
 Wartości minimalne i maksymalne
-![didn't generate!][minMaxByClass]
+![didn't generate!][maxMinByClass]
 
 Odchylenie standardowe
 ![didn't generate!][standardDeviationsByClass]
@@ -30,7 +33,11 @@ Wariancja
 ![didn't generate!][variancesByClass]
 
 Tabela korelacji atrybutów
-![didn't generate!][correlationAttsTable]
+![didn't generate!][correlationTable]
+
+Tabela kowariancji atrybutóœ
+![didn't generate!][covarianceTable]
+
 
 Macierz zależności
 ![didn't generate!][matOfDependenceGraph]
@@ -74,18 +81,7 @@ Tabela wynikami skuteczności klasyfikacji poszczególnych metod
 
 <!-- ![didn't generate!][] -->
 
-[rawHistogramMatrix]: ./output/histMat.png "Macierz histogramów"
-[dataQuantity]: https://github.com/kubehe/data-analysis-intro/raw/master/output/dataQuantity.png "Liczba reprezentów"
-[arithmeticAvgsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/arithmeticAvgByClass.png "Średnie arytmetyczne według klas"
-[geometricMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/geometricMeansByClass.png "Średnie geometryczne według klas"
-[harmonicMeansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/harmonicMeansByClass.png "Średnie harmoniczne według klas"
-[mediansByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/mediansByClass.png "Mediany według klas"
-[minMaxByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/minMaxByClass.png "Wartości maksymalne i minimalne według kals"
-[standardDeviationsByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/standardDeviationsByClass.png "Odchylenie standardowe według klas"
-[variancesByClass]: https://github.com/kubehe/data-analysis-intro/raw/master/output/variancesByClass.png "Wariancje według klas"
-[correlationAttsTable]: https://github.com/kubehe/data-analysis-intro/raw/master/output/correlationAttsTable.png "Macierz korelacji między atrybutami"
-[matOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/matOfDependenceGraph.png "Macierz wykresów zależności"
-[focusedMatOfDependenceGraph]: https://github.com/kubehe/data-analysis-intro/raw/master/output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresóœ zależności"
+
 [Classes]: ./output/plotmat-classes.png "Podział na klasy według atrybutu decyzyjnego"
 [kmeansClustering]: ./output/plotmat-group469-kmeans.png "Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9"
 [avgLinkClustering]: ./output/plotmat-group469-avglink.png "Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9"
@@ -97,3 +93,18 @@ Tabela wynikami skuteczności klasyfikacji poszczególnych metod
 [averageLinkCrossTable]: ./output/crosstab-avg-link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
 [completeLinkCrossTable]: ./output/crosstab-complete-link.svg "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
 [classificationTable]: ./output/clsf-results.svg "Tabela wynikami skuteczności klasyfikacji poszczególnych metod"
+
+[dataQuantity]: ./output/dataQuantity.png "Liczba reprezentów"
+[dataQuantityTable]: ./output/dataQuantityTable.png "Liczba reprezentów - tabela"
+[arithmeticAvgsByClass]: ./output/arithmeticAvgsByClass.png "Średnie arytmetyczne według klas"
+[geometricMeansByClass]: ./output/geometricMeansByClass.png "Średnie geometryczne według klas"
+[harmonicMeansByClass]: ./output/harmonicMeansByClass.png "Średnie harmoniczne według klas"
+[mediansByClass]: ./output/medianByClass.png "Mediany według klas"
+[maxMinByClass]: ./output/maxMinByClass.png "Wartości maksymalne i minimalne według kals"
+[standardDeviationsByClass]: ./output/standardDeviationsByClass.png "Odchylenie standardowe według klas"
+[variancesByClass]: ./output/variancesByClass.png "Wariancje według klas"
+[correlationTable]: ./output/correlationTable.png "Macierz korelacji między atrybutami"
+[covarianceTable]: ./output/covarianceTable.png "Macierz kowariancji między atrybutami"
+[matOfDependenceGraph]: ./output/matOfDependenceGraph.png "Macierz wykresów zależności"
+[focusedMatOfDependenceGraph]: ./output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresóœ zależności"
+
