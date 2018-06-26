@@ -1,4 +1,4 @@
-# data-analysis-intro
+﻿# data-analysis-intro
 
 [Link to report](https://kubehe.github.io/data-analysis-intro/ "Report")
 
@@ -45,7 +45,54 @@ Macierz zależności
 Szczególna macierz zależności
 ![didn't generate!][focusedMatOfDependenceGraph]
 
+Podział na klasy według atrybutu decyzyjnego
+![didn't generate!][Classes]
+
+Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9
+![didn't generate!][kmeansClustering]
+
+Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9
+![didn't generate!][avgLinkClustering]
+
+Dendrogram grupowania hierarchicznego (single linkage)
+![didn't generate!][singleLinkDendrogram]
+
+Dendrogram grupowania hierarchicznego (complete linkage)
+![didn't generate!][completeLinkDendrogram]
+
+Dendrogram grupowania hierarchicznego (average linkage)
+![didn't generate!][avgLinkDendrogram]
+
+Tabela krzyżowa grupowania metodą k-średnich
+![didn't generate!][kmeansCrossTable]
+
+Tabela krzyżowa grupowania hierarchicznego (single linkage)
+![didn't generate!][singleLinkCrossTable]
+
+Tabela krzyżowa grupowania hierarchicznego (average linkage)
+![didn't generate!][averageLinkCrossTable]
+
+Tabela krzyżowa grupowania hierarchicznego (complete linkage)
+![didn't generate!][completeLinkCrossTable]
+
+Tabela wynikami skuteczności klasyfikacji poszczególnych metod
+![didn't generate!][classificationTable]
+
+
 <!-- ![didn't generate!][] -->
+
+
+[Classes]: ./output/plotmat-classes.png "Podział na klasy według atrybutu decyzyjnego"
+[kmeansClustering]: ./output/plotmat-group469-kmeans.png "Grupowanie metodą k-średnich dla atrybutów 4, 6 i 9"
+[avgLinkClustering]: ./output/plotmat-group469-avglink.png "Grupowanie hierarchiczne (average linkage) dla atrybutów 4, 6 i 9"
+[singleLinkDendrogram]: ./output/dgram-single.svg "Dendrogram grupowania hierarchicznego (single linkage)"
+[avgLinkDendrogram]: ./output/dgram-average.svg "Dendrogram grupowania hierarchicznego (average linkage)"
+[completeLinkDendrogram]: ./output/dgram-complete.svg "Dendrogram grupowania hierarchicznego (complete linkage)"
+[kmeansCrossTable]: ./output/crosstab-kmeans.svg "Tabela krzyżowa grupowania metodą k-średnich"
+[singleLinkCrossTable]: ./output/crosstab-single-link.svg "Tabela krzyżowa grupowania hierarchicznego (single linkage)"
+[averageLinkCrossTable]: ./output/crosstab-avg-link.svg "Tabela krzyżowa grupowania hierarchicznego (average linkage)"
+[completeLinkCrossTable]: ./output/crosstab-complete-link.svg "Tabela krzyżowa grupowania hierarchicznego (complete linkage)"
+[classificationTable]: ./output/clsf-results.svg "Tabela wynikami skuteczności klasyfikacji poszczególnych metod"
 
 [dataQuantity]: ./output/dataQuantity.png "Liczba reprezentów"
 [dataQuantityTable]: ./output/dataQuantityTable.png "Liczba reprezentów - tabela"
@@ -60,3 +107,4 @@ Szczególna macierz zależności
 [covarianceTable]: ./output/covarianceTable.png "Macierz kowariancji między atrybutami"
 [matOfDependenceGraph]: ./output/matOfDependenceGraph.png "Macierz wykresów zależności"
 [focusedMatOfDependenceGraph]: ./output/focusedMatOfDependenceGraph.png "Wydzielony fragment macierzy wykresóœ zależności"
+
